@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="cal">
+        <H1>Calculator</H1>
+        <form action="/calci" method="POST">
+            <input type="number" required placeholder="Enter num1" name="num1" >
+            <select name="opr" required>
+                <option value="" disabled selected>select</option>
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="mul">x</option>
+                <option value="div">/</option>
+            </select>
+            <input type="number" required placeholder="Enter num2" name="num2" >
+            <button type="submit">calculate</button>
+        </form>
+    </div>
+    <div class="out">
+        {{output}}
+    </div>
+    
+</body>
+</html>
